@@ -10,7 +10,7 @@ async function insert(animal) {
 };
 
 async function update(id, changes) {
-  return db("animals").update(changes).where(id)
+  return db("animals").update(changes).where({id})
 };
 
 module.exports = {
